@@ -18,8 +18,8 @@ def average(arr: list):
             print(colm, end=" ")
         print("")
 
-    # output
-    print(f"\nAverage is {total/(len(arr)*len(arr[0]))}")
+    # return
+    return total / (len(arr) * len(arr[0]))
 
 
 def main():
@@ -35,7 +35,7 @@ def main():
     arr = [[randint(1, 50) for rand in range(colm)] for row in range(rows)]
 
     # output/process/calling function
-    average(arr)
+    print(f"Average is {average(arr)}")
 
     # done
     print("")
